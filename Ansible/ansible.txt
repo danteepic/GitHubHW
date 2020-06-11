@@ -1,0 +1,91 @@
+All SSH traffic is being blocked in our VM.
+It is how we set it up.
+
+
+Containers are lightweight VMs
+Provisioners are tools that automatically 
+Infrastructure as code (IaC)
+
+Cheaper
+
+Redundancy and better chances of access
+Increase in availability
+
+Sharding quicker access to data
+
+Define
+Fanning in
+
+Public IP address from my VM
+:
+168.61.19.57
+
+From <https://portal.azure.com/?quickstart=true#@whoadaddylive.onmicrosoft.com/resource/subscriptions/a1c7040c-a626-43d6-9e88-57bd51d5fbbc/resourceGroups/RedTeam/providers/Microsoft.Compute/virtualMachines/RedTeamVM/overview> 
+
+My public IP 
+142.105.24.46
+
+
+
+
+RedAdmin : allstar
+
+LAMP server
+
+Ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmzAISotfLNzh5IhCkQ8mWiq9EwcZrdtFm1qv1fo8It2tgzm58oxm2VBi4AcJrt7JTl24Lv6YsgDRLYjyGBM3QR/yLfu8l1sGcGj0eBhxi5JREVX0c94FfDeaTjGl6iYBFJnSxuuzBeXgPEf6c7gR3JzdVXnvpGSV7e17VnSwJDJxri6lQwM97OVNtvFcTYkVx2iBWSMHE7709HZc+AwlE0yClc8A8WgkD9lq1YA9kK31zgrPjb6O6VM93HgMeJYkbdmGKE/d+Fqr+h5cs4yveuJKa9SAwoxBrZNrRGBvUo7xUqm6wg08MLkkFLzWTjhIHu1CgfUQ6IuxaNlaTr6ZX
+
+Ansible
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXP3QhUxDH+nj4E7XTVbSZODOeBhJ013ZkL62Uj/QRd8ZfRzCX2l1AC4qO0MPNZPzpbZMJaaGMN4kROfqsHn1UhMeg4xZaL3sul3LGEd/AXQKXmNL2q0nDq11hpCfnRCojeodZzgyIbNjMtHUutaPedBF/X57j+MK97OXVOfdtPtCkIrApcynEjkwhxUXZYJ37ZdC6h06+cF2L1EiQVofGPG1iT/wo6vv3ex6hiMvMlZlKXKSGoeGNF6aGnezqZ3UH19/nF9c6Z1TdTld/6ibhqCM2DTOVivmsnFr9jD+oAboczDN1EYAEKsNE+PSugGuuoq1jJdrGaUiKQ4gearcv
+
+[sudo docker container list -a]
+[sudo docker start {container name}]
+[sudo docker attach {container name}]
+[cd /etc/ansible]
+[cat ./.ssh/id_rsa.pub] to make an SSH key
+[cd /etc/ansible]
+[ansible]
+[curl localhost/setup.php] no browser? Will run it as an html 
+http://138.91.244.77/setup.php
+[sudo sysctl -w vm.max_map_count=462144 ]
+
+[nano ansible.cfg]
+Controlw = remote_user
+Change sysadmin to RedAdmin
+
+[nano host]
+
+With ##webservers, delete ##
+
+
+RedTeam in Ansible
+
+
+
+^
+Check on this above
+
+
+At Dante
+[ssh RedAdmin@[RedTeamVM Public Address]
+My public IP address
+142.105.24.46
+
+[ ansible-playbook elk-playbook.yml  ]
+
+
+Dpkg -I filebeat-7.6.1
+
+
+
+
+Check later
+
+
+
+Instead of TODO it
+
+[nano filebeat-playbook.yaml]
+
+ should be webservers
+
+[nano filebeat.yml] copy/paste

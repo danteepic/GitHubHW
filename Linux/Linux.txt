@@ -1,0 +1,469 @@
+<command> <argument>
+Example: [touch myfile]
+Command is touch
+Argument is myfile
+
+
+
+[ls] - list
+[ls -S] list by size largest to smallest
+[ls -s] list by size smallest to largest
+[mkdir] - make directory (folder)
+[touch] - to create a file
+[cd] - navigation tag
+[rm] - remove
+[pwd] - Print Working Directory
+[cat] - shows the contense of a file
+[cp] - copy
+[cd ..] - brings you back one directory
+[mv] - move (Also renames a file and directory)
+[../../] - will bring you back two directories. Adding ../ will add another directory you will go up.
+[man] - manual for commands
+[ls -S] - list by size
+[cat -n] - counts the line of the list
+[*] Use a wildcard, such as *, to run this with a single command for all files in a directory
+[wc] word count:
+New Line
+Word
+Byte
+
+[grep] will look for data in a file (*.txt will look for data in all files in a directory)
+[find] will look for a file
+
+
+
+Cat - combines files and displays the results
+Combines txt files but only in this system 
+Example - Cat file.txt file2.txt
+Combines txt files and the actual files
+Cat file.txt file2.txt > file3.txt
+
+
+[sed] - make a substitution to a file
+
+Example [sed s/cow/bird] replaces cow with. bird
+
+[awk] - isolate data points from a complex log file
+Example [awk -F:  '{print $1}']
+
+[nano] - edit within a file
+[cd -] to go back to previous directory
+
+[>] Overwriting a file.
+[>>] Adding to a file.
+
+[top] see all running process in real time
+[ps] snapshot of running files
+[kill] end a program running
+
+[ps aux] output snapshot of running file that can be changed?
+[ps aux | grep ping] to find specific running files.
+
+Example:
+[sudo kill ####]
+#### will be a ping number
+You can end a running program this way.
+
+[sudo apt install <package name>]
+[sudo apt remove <package name>]
+
+[su <name>] to get into people's accounts
+[exit] to get out
+
+
+-t -l -a -Z
+
+
+
+Flag 1 - ls -l -a
+-rw-------  1 student student  169 Feb 21 22:43 .flag_1
+
+ You found 'flag_1:$1$WYmnR327$5C1yY4flBxB1cLjkc92Tq
+
+Flag 2 - cat /etc/passwd 
+lovelace:x:1004:1004::/home/lovelace:/bin/bash
+- cd /home/student/Documents/my-files 
+-john --show shadow
+student:letmein:18197:0:99999:7:::
+mitnik:trustno1:18197:0:99999:7:::
+
+You found flag_2:$1$PEDICYq8$6/U/a5Ykxw1OP0.eSrMZO0
+
+Flag 3 
+-cd /var/log
+-r--------   1 mitnik    mitnik           19375 Feb 21 21:58 mitnik.log
+-grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" mitnik.log | sort | uniq | wc -l
+102
+[ls -Rla]
+
+babbage : freedom
+You found flag_3:$1$Y9tp8XTi$m6pAR1bQ36oAh.At4G5s3
+
+Flag 4
+stallman - computer
+You found flag_4:$1$lGQ7QprJ$m4eE.b8jhvsp8CNbuIF5U0
+
+Flag 5
+
+If (x>y)
+Then
+
+
+You found flag_5:$1$zuzYyKCN$secHwYBXIELGqOv8rWzG00
+sysadmin - passw0rd
+
+Flag 6
+-alias
+flag_6:.XLLp$oj.BXuxR2q99bJwNEFhSH1
+
+Flag 7
+[sudo less file]
+[!bash]
+[passwd]
+	- p4ssw0rd
+You found flag_7:$1$zmr05X2t$QfOdeJVDpph5pBPpVL6oy0
+
+Flag 8
+
+[john --wordlist=/home/student/Desktop/.pass_list.txt]
+
+The CIA Triad
+Confidciality
+Integrity
+Availablity - 
+
+OAS
+On-Access Scan
+
+ODS
+
+On-Demand Scan
+
+
+USA, Lesotho and Bahamas have the most Vulnerabilities this past week.
+
+
+Team Project
+Necurs botnet
+Locky
+
+
+Cybersecurity Domains
+Security Architecture
+Security Operation
+Governance
+Physical Security
+Threat Intelligence
+Career Development
+Risk Assessment
+User Education
+Framework and Standards
+
+Systems Engineer
+Intelligence Analyst
+Systems Administrator (Risk Analyst)
+Penetration Tester
+Web Engineer - Application Security
+
+Take a few minutes to search popular job listing websites (Indeed, LinkedIn, Dice) for “Cybersecurity Jobs”.
+	• Review at least three job postings in depth.
+	• Review at least two job postings with similar titles, and take note of differences between skills 
+	• and qualifications required.
+Be prepared to share:
+	• What search terms did you use? Why did you use these search terms?
+	• How confident did you feel about these search terms? Did you already have a clear idea of the specific roles you want or do you hope to have a better sense of that as the program progresses?
+	• How many jobs did you find?
+	• What did the job descriptions entail?
+	• What skills and qualifications did you see frequently?
+How did skills and qualifications differ between similarly titled jobs?
+
+From <https://app.slack.com/client/TSY0F29H6/CSY0F3540/thread/CSY0V65JR-1580432937.003100> 
+
+Security+
+CompTIA - Anyone in security should get it.
+EC Council
+ISC2
+Offensive Security
+GIAC
+
+90 questions
+$339
+
+
+750/900
+
+-Threats, Attacks and Vulnerability
+	• Malware Types
+	• Social Engineering
+	• Application Attacks
+	• Wireless Attacks
+	• Cryptographic 
+	• Threat Actors
+
+
+-Tech and tools
+
+-Architecture and Design
+-
+
+You are responsible for security at a small organization and have been tasked with implementing a security policy. Place the actions of organizing a security policy in their appropriate order. Note that there are five options, but you need to choose four
+
+Obtain Support and commitment from Management
+Analyze risks to security
+Implement Appropriate controls
+Review test and update procedures
+
+
+CertMaster Practice Tool
+
+Difference between trojan and rootkits
+
+Kill chain first gains access via Exploits 
+
+
+Triton Malware
+Blank Slate Attack
+Digmine
+Emotet
+TrickBot
+Badrabbit 
+Orange Worm
+
+Look up SMB Exploits
+
+
+
+5 sub modules 
+
+Virus vs Worms
+Virus - copying itself.
+
+
+Boot Sector
+Program Viruses
+Script Viruses
+Macro Viruses
+Multi
+
+
+Disk, Network, USB
+
+Virus can come in an image
+
+
+Virus
+	• .bat extension
+	• Attaches to a host
+
+Worm
+	• Self replicating
+	• Doesn’t need a host
+
+Zombie is a computer that is being remotely controlled by a malicious actor.
+
+Spyware
+Keyloggers
+Adware
+Backdoors
+Rootkits
+
+
+Vulnerabilities
+Exploits
+Risk
+
+
+
+Governance file or information management
+Risk potential threats to information leaks
+Compliance following rules and adhering to guidelines
+
+Security vs Business concerns
+Protect business data verses Maximizing Profit
+
+GRC Framework
+Governance: Creating management process for implementing security practices across the organization
+Compliance: Making sure the business follow internal security policies
+Risk Management: Identifying an organization most important asset and determining how they may be compromised.
+
+
+Single point of failure is when there are no backup and a single server. Redundancy
+
+Security Culture is the wat members of an organization think about and approach security issues.
+
+Measure and set goals
+Involve the Right People
+Create an action plan 
+Execute the plans
+Measure change
+
+Security roles and responsibilities
+Executive roles CFO, COO, CISO, CIO
+
+Chief Financial Officer
+Chief Operating
+Chief Information Security Officer
+CIO
+
+
+
+
+Network Security	Incident Response	Application Security
+Director of networking 		
+		
+
+Assessment of the damage done
+
+
+
+Administrative	Technical	 Physical
+Requiring employees to 		
+follow training guidelines
+
+SSH?
+
+
+Type of Security Controls
+	• Preventative
+	• Deterrent
+	• Detective
+	• Corrective
+	• Compensating
+
+Linux	Networks	Incident Response
+File permissions act 	Firewalls	
+as access controls by 
+preventing users from 
+modifying files they 
+don’t own.
+
+Secure Shell is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. Wikipedia
+
+From <https://www.google.com/search?sxsrf=ACYBGNTFgu8g4ozLvLETn9LTaOA8vRI15A%3A1576166068990&source=hp&ei=tGLyXebeOciC5wK_57WYCw&q=ssh&btnK=Google+Search&oq=acer+a&gs_l=psy-ab.3.1.0i67l4j0l6.5870.7387..12998...1.0..1.208.811.2j2j2......0....1..gws-wiz.......0i131j35i39j0i20i263.A1k3N4toE4o> 
+
+
+
+
+GUI - Graphical User Interface
+
+[ls] - list
+[mkdir] - make directory (folder)
+[touch] - to create a file
+[cd] - navigation tag
+[rm] - remove
+[pwd] - Print Working Directory
+[cat] - shows the contense of a file
+[cp] - copy
+[cd ..] - brings you back one directory
+[mv] - move (Also renames a file and directory)
+[../../] - will bring you back two directories. Adding ../ will add another directory you will go up.
+[man] - manual for commands
+[ls -S] - list by size
+[cat -n] - counts the line of the list
+[*] Use a wildcard, such as *, to run this with a single command for all files in a directory
+[wc] word count:
+New Line
+Word
+Byte
+
+
+
+Cat - combines files and displays the results
+Combines txt files but only in this system 
+Example - Cat file.txt file2.txt
+Combines txt files and the actual files
+Cat file.txt file2.txt > file3.txt
+
+Relative verse absolute path
+
+Relative starts at your current location in the directory and doesn’t show the exact path
+
+Tab button helps auto complete words you are typing
+
+
+More - page by page
+Less - scrolling
+Head - Top to bottom
+Tail - Bottom to top
+
+10 is default number of lines.
+
+Example head -50 text.txt
+
+Q 
+
+Erase all except:
+
+Henry
+Do.txt
+Sp.txt
+Wp.txt
+
+Ruth
+Hy.txt
+L8.txt
+Ud.txt
+
+[head -n 4 logfile.txt]
+
+
+[wc] exercise 
+
+[find] exercise 
+
+[grep]
+
+Pipe redirects the output of one command to another to complete additional tasks.
+Commands will act in order from left to right.
+
+[grep -i SallyStealer Largetransfers.txt | wc -l]
+
+[grep -i SallyStealer Largetransfers.txt | wc -lB] to remove any blank line spaces
+
+The answer is 9 because it only gave the number of lines.
+
+Command
+
+Option
+
+Parameter
+
+Argument
+
+[sed] - make a substitution to a file
+[awk] - isolate data points from a complex log file
+[nano] - edit within a file
+
+AWK Example
+Atlanta, Georgia, USA
+[cat awk.txt | awk -F, '{print $2}']
+Will give you Georgia
+
+[awk -F(delimiter) '{print $(field_number)}']
+
+From <https://app.slack.com/client/TSY0F29H6/DTCTAGFMX> 
+
+SED Example
+[cat combined | sed s/INCORRECT_PASSWORD/ACCESS_DENIED/]
+
+[sed s/
+
+Sh
+Bash
+Zsh
+Csh
+
+Diskcleanup.sh to clean things up
+
+Created a script
+
+[cat LogA.txt | sed s/INCORRECT_PASSWORD/ACCESS_DENIED/ | awk -F" " '{print $6, $4}']
+
+RAM Random Access Memory
+Diskspace
+CPU Central Processing Unit
+
+[top] see all running process in real time
+[ps]
+[kill] end a program running
+
